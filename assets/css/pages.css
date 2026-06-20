@@ -159,7 +159,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 .back-link:hover {
@@ -248,7 +248,7 @@
   gap: 8px;
   text-decoration: none;
   min-height: 46px;
-  transition: all 0.25s ease, transform 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-project:hover {
@@ -418,6 +418,23 @@
       color: var(--line);
     }
 
+    .r-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 2px solid var(--accent);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 560px) {
+      .r-photo {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
     /* ── SECTIONS ── */
     .r-section {
       margin-bottom: 26px;
@@ -495,24 +512,15 @@
 
     /* ── SKILLS ── */
     .r-skill-row {
-      display: flex;
-      gap: 14px;
-      margin-bottom: 9px;
       font-size: 0.87rem;
     }
 
-    .r-skill-row:last-child {
-      margin-bottom: 0;
-    }
-
     .r-skill-label {
-      flex: 0 0 175px;
       font-weight: 600;
       color: var(--dark);
     }
 
     .r-skill-list {
-      flex: 1;
       color: #4a4039;
     }
 
@@ -539,15 +547,6 @@
     @media (max-width: 560px) {
       .r-name {
         font-size: 1.7rem;
-      }
-
-      .r-skill-row {
-        flex-direction: column;
-        gap: 2px;
-      }
-
-      .r-skill-label {
-        flex: none;
       }
 
       .r-entry-top {
