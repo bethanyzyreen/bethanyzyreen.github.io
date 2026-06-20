@@ -439,7 +439,7 @@ textarea.custom-input {
   }
 }
 
-/* ── RESPONSIVE: TABLET ── */
+
 @media (max-width: 991px) {
   .project-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -455,7 +455,6 @@ textarea.custom-input {
   }
 }
 
-/* ── RESPONSIVE: MOBILE ── */
 @media (max-width: 767px) {
   .card-section {
     padding: 20px 16px;
@@ -670,7 +669,7 @@ footer {
   margin: 0;
 }
 
-/* ── SKILL BARS (CV Skills) ── */
+
 .skill-group-label {
   font-weight: 600;
   font-size: 0.85rem;
@@ -680,49 +679,7 @@ footer {
   margin-bottom: 16px;
 }
 
-.skill-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
 
-.skill-bar-item span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: auto;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-.skill-bar-item span::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 5px rgba(201, 123, 99, 0.12);
-  flex-shrink: 0;
-}
-
-.bar {
-  width: 100%;
-  height: 11px;
-  background: #f4e4dc;
-  border-radius: 50px;
-  overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(61, 34, 25, 0.08);
-}
-
-.fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent) 0%, #df9b7c 58%, #f0c97a 100%);
-  border-radius: 50px;
-  box-shadow: 0 3px 10px rgba(201, 123, 99, 0.25);
-}
-
-/* ── SUNSET PAGES EXPANDED CARD ── */
 .project-card--vertical {
   flex-direction: column;
 }
@@ -745,7 +702,7 @@ footer {
   line-height: 1.6;
 }
 
-/* About / section blocks inside card */
+
 .sp-block {
   margin-bottom: 22px;
 }
@@ -767,7 +724,7 @@ footer {
   margin-bottom: 8px;
 }
 
-/* Genre list */
+
 .sp-genres {
   display: flex;
   flex-direction: column;
@@ -794,7 +751,7 @@ footer {
   color: #7a5a50;
 }
 
-/* Feature pills */
+
 .sp-features {
   display: flex;
   flex-wrap: wrap;
@@ -816,8 +773,7 @@ footer {
   margin-right: 6px;
 }
 
-/* ── PROJECT DETAIL PAGES ── */
-/* ── FOOTER LAYOUT FIX ── */
+
 .footer-card .row {
   gap: 0;
   position: relative;
@@ -1039,7 +995,7 @@ footer {
   line-height: 1.7;
 }
 
-/* ── PROJECT CARD GRADIENT PANELS ── */
+/* ── PROJECT CARD PANELS ── */
 .furniture-panel {
   background: linear-gradient(160deg, #c97b63 0%, #d4956a 40%, #e8b86a 75%, #f0c97a 100%);
   display: flex;
@@ -1095,7 +1051,7 @@ footer {
   display: block;
 }
 
-/* ── FOOTER ENHANCED ── */
+
 .footer-center {
   display: flex;
   flex-direction: column;
@@ -1239,7 +1195,7 @@ footer {
   color: var(--accent);
 }
 
-/* ── FOOTER RESPONSIVE ── */
+
 @media (max-width: 1199px) {
   .footer-socials-icons {
     grid-template-columns: repeat(2, 40px);
@@ -1255,14 +1211,14 @@ footer {
     width: 100%;
   }
 
-  /* Contact stays at top */
+
   .col-lg-4:nth-child(1) {
     margin-bottom: 24px;
     border-bottom: 1px solid rgba(201, 123, 99, 0.08);
     padding-bottom: 24px;
   }
 
-  /* Socials move to right of contact on tablet */
+
   .col-lg-4:nth-child(3) {
     position: absolute;
     top: 28px;
@@ -1280,7 +1236,7 @@ footer {
     grid-template-columns: repeat(2, 40px);
   }
 
-  /* Logo centered at bottom */
+
   .col-lg-4:nth-child(2) {
     margin-top: 20px;
     padding-top: 20px;
@@ -1316,14 +1272,14 @@ footer {
     margin-bottom: 0;
   }
 
-  /* Contact at top */
+
   .col-lg-4:nth-child(1) {
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(201, 123, 99, 0.08);
   }
 
-  /* Socials on right, small */
+
   .col-lg-4:nth-child(3) {
     position: absolute;
     top: 20px;
@@ -1343,7 +1299,7 @@ footer {
     gap: 10px;
   }
 
-  /* Logo centered */
+
   .col-lg-4:nth-child(2) {
     margin-top: 18px;
     padding-top: 8px;
@@ -1398,7 +1354,7 @@ footer {
   }
 }
 
-/* ── FURNITURE PRODUCT COLLECTION TABLE ── */
+
 .furniture-table {
   width: 100%;
   border-collapse: collapse;
@@ -1570,7 +1526,7 @@ footer {
   box-shadow: var(--shadow-lift);
 }
 
-/* ── PORTFOLIO PANEL ICON ── */
+
 .panel-icon {
   font-size: 3.5rem;
   color: rgba(255, 255, 255, 0.85);
@@ -2693,61 +2649,61 @@ body {
   font-size: 0.78rem;
 }
 
-    .zyreen-mobile-carousel {
-      width: 260px;
-      margin: 0 auto;
-      position: relative;
-    }
+.zyreen-mobile-carousel {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+}
 
-    .zyreen-mobile-carousel .carousel-inner {
-      background: transparent;
-      box-shadow: none;
-      border-radius: 18px;
-      overflow: hidden;
-      width: 100%;
-    }
+.zyreen-mobile-carousel .carousel-inner {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+}
 
-    .zyreen-mobile-carousel .app-screenshot {
-      background: transparent;
-      line-height: 0;
-      display: block;
-    }
+.zyreen-mobile-carousel .app-screenshot {
+  background: transparent;
+  line-height: 0;
+  display: block;
+}
 
-    .zyreen-mobile-carousel .app-screenshot img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      border-radius: 16px;
-      box-shadow: 0 8px 28px rgba(61, 34, 25, 0.15);
-    }
-    
-    .zyreen-mobile-carousel .carousel-control-prev,
-    .zyreen-mobile-carousel .carousel-control-next {
-      left: auto;
-      right: auto;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgba(255, 253, 251, 0.95);
-      box-shadow: 0 4px 14px rgba(61, 34, 25, 0.14);
-      opacity: 1;
-    }
+.zyreen-mobile-carousel .app-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(61, 34, 25, 0.15);
+}
 
-    .zyreen-mobile-carousel .carousel-control-prev {
-      left: 10px;
-    }
+.zyreen-mobile-carousel .carousel-control-prev,
+.zyreen-mobile-carousel .carousel-control-next {
+  left: auto;
+  right: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 253, 251, 0.95);
+  box-shadow: 0 4px 14px rgba(61, 34, 25, 0.14);
+  opacity: 1;
+}
 
-    .zyreen-mobile-carousel .carousel-control-next {
-      right: 10px;
-    }
+.zyreen-mobile-carousel .carousel-control-prev {
+  left: 10px;
+}
 
-    /* dots centered under image */
-    .zyreen-mobile-carousel .carousel-indicators {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.zyreen-mobile-carousel .carousel-control-next {
+  right: 10px;
+}
+
+
+.zyreen-mobile-carousel .carousel-indicators {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
