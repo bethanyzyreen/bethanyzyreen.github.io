@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyreen – Sunset Pages</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/Group13.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">Bethany Zyreen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
+          <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="detail-hero sunset-hero">
+    <div class="container text-center">
+      <i class="fas fa-book-open detail-hero-icon"></i>
+      <h1 class="detail-hero-title">Sunset Pages</h1>
+      <p class="detail-hero-sub">Online Bookstore</p>
+      <p class="detail-hero-tagline">"Where Every Sunset Begins a New Story"</p>
+      <div class="detail-badges">
+        <span class="project-badge">HTML</span>
+        <span class="project-badge">CSS</span>
+        <span class="project-badge">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACK LINK -->
+  <div class="container mt-4">
+    <a href="portfolio.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section pt-4">
+    <div class="container">
+      <h2 class="section-title">About the Project</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 d-flex">
+          <div class="project-summary-item w-100">
+            <div class="project-summary-icon"><i class="fas fa-palette"></i></div>
+            <h5>Sunset-Themed Design</h5>
+            <p>Sunset Pages was designed around a warm, sunset-inspired color palette, blending the
+              calm of golden hour with the cozy feeling of getting lost in a good book.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex">
+          <div class="project-summary-item w-100">
+            <div class="project-summary-icon"><i class="fas fa-images"></i></div>
+            <h5>Curated Photo Galleries</h5>
+            <p>Book listings are paired with curated image galleries, giving each title a more visual
+              and immersive presentation than a plain text listing.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex">
+          <div class="project-summary-item w-100">
+            <div class="project-summary-icon"><i class="fas fa-star"></i></div>
+            <h5>5-Star Rating System</h5>
+            <p>An interactive star rating system lets the bookstore showcase how each title has been
+              received, adding a layer of interactivity built with JavaScript.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex">
+          <div class="project-summary-item w-100">
+            <div class="project-summary-icon"><i class="fas fa-layer-group"></i></div>
+            <h5>Genre-Based Discovery</h5>
+            <p>Books are organized by genre, helping readers browse toward titles that match their
+              taste instead of scrolling through one long, undifferentiated list.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT SCREENSHOTS -->
+  <section class="section pt-0">
+    <div class="container">
+      <h2 class="section-title">App Screenshots</h2>
+      <div class="screenshot-carousel-wrap">
+        <div id="sunsetpagesScreenshots" class="carousel slide screenshot-carousel" data-bs-ride="carousel"
+          data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="project-screenshot app-screenshot">
+                <img src="assets/img/sunsetpages.jpg" alt="Sunset Pages home screen" class="img-fluid">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="project-screenshot app-screenshot">
+                <img src="assets/img/sunsetpages1.jpg" alt="Sunset Pages book listing" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#sunsetpagesScreenshots"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#sunsetpagesScreenshots"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sunsetpagesScreenshots" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#sunsetpagesScreenshots" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="section pt-0">
+    <div class="container">
+      <h2 class="section-title">Key Features</h2>
+      <div class="card-section">
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-book"></i></div>
+              <div>
+                <h6>Book Listings</h6>
+                <p>Each book is displayed with cover art, description, and genre, giving readers enough
+                  detail to decide at a glance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-star-half-stroke"></i></div>
+              <div>
+                <h6>Interactive Ratings</h6>
+                <p>The 5-star rating system gives the storefront a more dynamic, community-driven feel
+                  beyond static product pages.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-magnifying-glass"></i></div>
+              <div>
+                <h6>Genre Discovery</h6>
+                <p>Genre-based navigation helps visitors quickly find books in the categories they
+                  actually enjoy reading.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+              <div>
+                <h6>Responsive Layout</h6>
+                <p>Built with responsive design principles, the bookstore adapts cleanly across desktop
+                  and mobile screens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGS -->
+  <section class="section pt-0 pb-5">
+    <div class="container">
+      <h2 class="section-title">Tags</h2>
+      <div class="project-tags">
+        <span class="tag">Image Gallery</span>
+        <span class="tag">Book Listing</span>
+        <span class="tag">UI/UX</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
