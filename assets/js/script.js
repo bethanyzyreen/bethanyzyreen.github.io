@@ -1,7 +1,14 @@
+// Safe lookup for hash/anchor targets (never throws on odd or malformed hashes)
+function getHashTarget(hash) {
+  let id = hash.replace(/^#/, '');
+  try { id = decodeURIComponent(id); } catch (e) { /* keep raw id */ }
+  return id ? document.getElementById(id) : null;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  const animatedItems = document.querySelectorAll(
-    '.card-section, .project-card, .feature-card, .project-summary-item, .sp-genre-item, .footer-card, .hero-card, .detail-hero, .project-screenshot'
-  );
+  const animatedItems = Array.from(document.querySelectorAll(
+    '.card-section, .project-card, .feature-card, .project-summary-item, .sp-genre-item, .footer-card, .hero-card, .detail-hero, .project-screenshot, .screenshot-carousel-wrap'
+  )).filter(item => !item.closest('.carousel-item'));
 
   animatedItems.forEach(item => {
     item.classList.add('animated-card');
@@ -35,15 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       this.appendChild(ripple);
       ripple.addEventListener('animationend', () => ripple.remove());
+      setTimeout(() => ripple.remove(), 700);
     });
   });
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+      const target = getHashTarget(this.getAttribute('href'));
+      if (!target) return;
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+      target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 
@@ -84,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   if (location.hash) {
-    const target = document.querySelector(location.hash);
+    const target = getHashTarget(location.hash);
     if (target) {
       setTimeout(() => {
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });

@@ -2135,6 +2135,11 @@ body {
 
 .custom-nav {
   padding: 14px 12px;
+  /* pin header typography/colour so it is identical on pages that also load pages.css
+     (pages.css ships global body rules: 15px font-size, 1.6 line-height, --dark override) */
+  font-size: 1rem;
+  line-height: 1.5;
+  --dark: #3d2219;
 }
 
 .custom-nav .container {
@@ -2149,6 +2154,9 @@ body {
   height: 42px;
   padding: 0;
   box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .navbar-toggler:focus {
@@ -2157,10 +2165,43 @@ body {
 
 .nav-link {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border-radius: 50px;
   padding: 9px 16px !important;
   margin-left: 4px;
+  white-space: nowrap;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+/* reserve the bold (active) width so links never shift between pages */
+.nav-link span::after {
+  content: attr(data-text);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.nav-link-icon {
+  width: 1.1em;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.logo {
+  white-space: nowrap;
+}
+
+/* keep the right-most pill visually balanced with the logo on the left */
+@media (min-width: 992px) {
+  .custom-nav .container {
+    padding-right: 20px !important;
+  }
 }
 
 .nav-link:hover,
@@ -2335,6 +2376,7 @@ body {
 
   .navbar-collapse {
     padding-top: 12px;
+    padding-bottom: 4px;
   }
 
   .navbar-nav {
@@ -2706,4 +2748,47 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+/* ── TALL PROJECT CARDS (Portfolio & Activities): image on top, cards side by side ── */
+.project-grid--tall {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-grid--tall .project-card {
+  flex-direction: column;
+}
+
+.project-grid--tall .project-image {
+  width: 100%;
+  height: 220px;
+  min-height: 220px;
+}
+
+.project-grid--tall .project-content {
+  padding: 24px 22px;
+}
+
+.project-grid--tall .project-content > .d-flex,
+.project-grid--tall .project-content > .btn-project {
+  margin-top: auto !important; /* beats Bootstrap's mt-3 so buttons align at the card bottom */
+}
+
+.project-grid--tall .project-content .d-flex.gap-2 {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .project-grid--tall {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid--tall .project-image {
+    height: 190px;
+    min-height: 190px;
+  }
+}
+
+/* ── PROJECT DETAIL PAGES: no fixed navbar, so no top offset (navigation is the Back to Portfolio link) ── */
+body.detail-page {
+  padding-top: 0;
 }
