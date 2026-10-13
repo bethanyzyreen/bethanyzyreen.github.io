@@ -1,0 +1,31 @@
+/* Live preview of an activity inside its project card.
+   The activity is rendered at its design size (1440 x 810) and scaled down to fit the card. */
+.activity-preview {
+    padding: 0 28px 28px;
+}
+
+.preview-frame {
+    position: relative;
+    aspect-ratio: 1440 / 810;
+    overflow: hidden;
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius-md);
+    background: var(--surface-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.preview-frame iframe {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 1440px;
+    height: 810px;
+    border: 0;
+    transform-origin: 0 0;
+    transform: scale(var(--s, .6));
+    /* --s is set by the script on the page */
+}
+
+/* the preview needs room, so this card spans both columns of the 2-column grid */
+#bento-layout {
+    grid-column: 1 / -1;
+}
