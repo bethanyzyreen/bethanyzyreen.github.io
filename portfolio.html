@@ -4,205 +4,522 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zyreen – Portfolio</title>
+  <title>Bethany Zyreen – Aspiring Forensic Computer Analyst</title>
+  <meta name="description"
+    content="Portfolio of Bethany Zyreen, a third-year BSIT student building full-stack web systems and small applications.">
+  <meta name="theme-color" content="#fdf6ee">
   <link rel="icon" type="image/svg+xml" href="assets/img/Group13.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
 </head>
 
-<body>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
-    <div class="container">
-      <a class="navbar-brand logo" href="index.html">Bethany Zyreen</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-brand" href="#top">
+        <img src="assets/img/Group20.svg" alt="" width="36" height="36">
+        <h3>Bethany Zyreen</h3>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="visually-hidden">Menu</span>
+        <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link"><i
-                class="fas fa-user nav-link-icon"></i><span data-text="About Me">About Me</span></a></li>
-          <li class="nav-item"><a href="cv.html" class="nav-link"><i
-                class="fas fa-file-lines nav-link-icon"></i><span data-text="CV">CV</span></a></li>
-          <li class="nav-item"><a href="portfolio.html" class="nav-link active" aria-current="page"><i
-                class="fas fa-folder-open nav-link-icon"></i><span data-text="Portfolio">Portfolio</span></a></li>
-          <li class="nav-item"><a href="activities.html" class="nav-link"><i
-                class="fas fa-laptop-code nav-link-icon"></i><span data-text="Activities">Activities</span></a></li>
+
+      <div class="nav-menu" id="nav-menu">
+        <button class="nav-close" type="button" aria-label="Close menu"><i class="fas fa-xmark"
+            aria-hidden="true"></i></button>
+        <ul class="nav-links">
+          <li><a href="#top" data-nav="top">Home</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#skills" data-nav="skills">Skills</a></li>
+          <li><a href="#projects" data-nav="projects">Projects</a></li>
+          <li><a href="#activities" data-nav="activities">Activities</a></li>
+          <li><a href="#experience" data-nav="experience">Experience</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+  </header>
 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1 class="section-title">Portfolio</h1>
-      <p class="page-subtitle">A collection of projects</p>
-    </div>
-  </section>
+  <main id="main">
 
-  <!-- PROJECTS -->
-  <section class="section pt-0">
-    <div class="container">
-      <div class="card-section">
-        <div class="project-grid project-grid--tall">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Open to internships &amp;
+          collaborations</p>
+        <h1 id="hero-title">Hi, I'm <em>Bethany Zyreen</em></h1>
+        <p class="hero-role">Aspiring Forensic Computer Analyst</p>
+        <p class="hero-text">
+          Third-year BSIT student and aspiring Forensic Computer Analyst. Currently pursuing a Bachelor of Science in
+          Information Technology at the Polytechnic University of the Philippines – Sto. Tomas Branch.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects <i class="fas fa-arrow-down"
+              aria-hidden="true"></i></a>
+          <a class="btn btn-outline" href="resume.html">View Resume</a>
+        </div>
+        <ul class="social-list" aria-label="Social media">
+          <li><a class="social-btn" href="https://instagram.com/zyrnchl" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a class="social-btn" href="https://facebook.com/bethanyzyreen" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a class="social-btn" href="https://www.linkedin.com/in/bethanyzyreenamosco" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </li>
+          <li><a class="social-btn" href="https://github.com/bethanyzyreen" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </section>
 
-          <!-- PROJECT 1: Qydentra Dental Clinic -->
-          <article class="project-card" id="qydentra">
-            <div class="project-image sunset-panel">
-              <i class="fas fa-tooth panel-icon"></i>
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="assets/img/mm.jpeg" alt="Portrait" width="1085" height="1296">
+        </div>
+        <div>
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">Building thoughtful systems, one project at a time</h2>
+          <p class="lead">
+            Builds full-stack web systems, responsive interfaces, and small applications, with hands-on experience
+            across PHP, MySQL, JavaScript, and UI/UX design — and a growing focus on digital forensics and
+            cybersecurity.
+          </p>
+          <dl class="info-grid">
+            <div class="info-card">
+              <dt>Education</dt>
+              <dd>BSIT · PUP Sto. Tomas</dd>
             </div>
-            <div class="project-content">
-              <span class="project-badge">PHP · MySQL · Bootstrap</span>
-              <h3>Qydentra — Dental Clinic Management System</h3>
-              <p>
-                A full-stack web-based dental clinic system supporting four roles — Admin, Dentist,
-                Receptionist, and Patient — each with a tailored dashboard. Includes appointment booking,
-                real-time queue management, patient records, staff management, audit logs,
-                and a notification system with custom-prefixed IDs.
-              </p>
-              <div class="project-tags">
-                <span class="tag">Multi-Role</span>
-                <span class="tag">Queue System</span>
-                <span class="tag">Appointments</span>
-                <span class="tag">MySQL</span>
-              </div>
-              <div class="d-flex flex-wrap gap-2 mt-3">
-                <a href="https://github.com/bethanyzyreen/Qydentra.git" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-project">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <a href="qydentra.html" class="btn btn-project">
-                  <i class="fas fa-eye"></i> View Project
-                </a>
-              </div>
+            <div class="info-card">
+              <dt>Location</dt>
+              <dd>Tanauan, Batangas</dd>
+            </div>
+            <div class="info-card">
+              <dt>Focus</dt>
+              <dd>Digital forensics &amp; Database Administration</dd>
+            </div>
+            <div class="info-card">
+              <dt>Strengths</dt>
+              <dd>Adaptability · Teamwork</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-tint" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 id="skills-title">What I work with</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3><span class="icon-tile"><i class="fas fa-code" aria-hidden="true"></i></span>Languages</h3>
+            <ul class="chip-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>C++</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3><span class="icon-tile"><i class="fas fa-layer-group" aria-hidden="true"></i></span>Frameworks &amp;
+              Platforms</h3>
+            <ul class="chip-list">
+              <li>Bootstrap</li>
+              <li>MySQL</li>
+              <li>Kodular</li>
+              <li>Pygame</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3><span class="icon-tile"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i></span>Tools &amp;
+              Soft Skills</h3>
+            <ul class="chip-list">
+              <li>Figma</li>
+              <li>Git &amp; GitHub</li>
+              <li>UI/UX Design</li>
+              <li>Attention to Detail</li>
+              <li>Adaptability</li>
+              <li>Teamwork</li>
+              <li>Problem Solving</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="projects-title">Selected projects</h2>
+        <p class="section-intro">Systems and apps I've built for school and with classmates. Open a project to see what
+          it does.</p>
+
+        <div class="project-grid">
+
+          <article class="project-card" data-project="qydentra">
+            <div class="project-media">
+              <img src="assets/img/qydentra.jpg" alt="Qydentra sign-in screen in front of a dental clinic" width="1440"
+                height="900" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3>Qydentra</h3>
+              <p class="project-sub">Dental Clinic Management System</p>
+              <p class="project-desc">Role-based dashboards, online appointment booking, real-time queue management, and
+                audit logs for a dental clinic.</p>
+              <ul class="tag-list">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>Queue System</li>
+              </ul>
+              <button class="btn btn-primary btn-sm project-open" type="button" data-open="qydentra"
+                aria-haspopup="dialog">View Project</button>
             </div>
           </article>
 
-          <!-- PROJECT 2: Sunset Pages -->
-          <article class="project-card" id="sunset-pages">
-            <div class="project-image sunset-panel">
-              <i class="fas fa-book-open panel-icon"></i>
+          <article class="project-card" data-project="zythera">
+            <div class="project-media">
+              <img src="assets/img/zythera.jpg" alt="Zythera furniture marketplace home page" width="1440" height="900"
+                loading="lazy">
             </div>
-            <div class="project-content">
-              <span class="project-badge">HTML · CSS · JavaScript</span>
-              <h3>Sunset Pages — Online Bookstore</h3>
-              <p>
-                A visually immersive online bookstore inspired by the beauty of sunsets and the joy of reading.
-                Features a warm sunset-themed design, curated photo galleries, a 5-star rating system,
-                and genre-based book discovery — all built with responsive design principles.
-              </p>
-              <div class="project-tags">
-                <span class="tag">Image Gallery</span>
-                <span class="tag">Book Listing</span>
-                <span class="tag">UI/UX</span>
-              </div>
-              <div class="d-flex flex-wrap gap-2 mt-3">
-                <a href="https://github.com/bethanyzyreen/Sunset_Pages.git" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-project">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <a href="sunsetpages.html" class="btn btn-project">
-                  <i class="fas fa-eye"></i> View Project
-                </a>
-              </div>
+            <div class="project-body">
+              <h3>Zythera</h3>
+              <p class="project-sub">Premium Furniture Marketplace</p>
+              <p class="project-desc">A furniture store with a product catalog, cart, checkout flow, and an admin
+                dashboard for orders and inventory.</p>
+              <ul class="tag-list">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>E-Commerce</li>
+                <li>Admin Panel</li>
+              </ul>
+              <button class="btn btn-primary btn-sm project-open" type="button" data-open="zythera"
+                aria-haspopup="dialog">View Project</button>
             </div>
           </article>
 
-          <!-- PROJECT 3: Zythera Furniture -->
-          <article class="project-card" id="zythera">
-            <div class="project-image sunset-panel">
-              <i class="fas fa-couch panel-icon"></i>
+          <article class="project-card" data-project="zyreen-mobile">
+            <div class="project-media project-media--phone">
+              <img src="assets/img/kodular.jpg" alt="Zyreen mobile bookstore app home screen" width="720" height="1600"
+                loading="lazy">
             </div>
-            <div class="project-content">
-              <span class="project-badge">PHP · MySQL · CSS</span>
-              <h3>Zythera — Premium Furniture Marketplace</h3>
-              <p>
-                A full-stack furniture e-commerce system built with PHP, Bootstrap, and MySQL.
-                Features a polished product catalog, shopping cart, checkout flow, and an admin
-                dashboard for order management, inventory tracking, and product updates.
-              </p>
-              <div class="project-tags">
-                <span class="tag">E-Commerce</span>
-                <span class="tag">Admin Panel</span>
-                <span class="tag">MySQL</span>
-              </div>
-              <div class="d-flex flex-row flex-wrap gap-2 mt-3">
-                <a href="https://github.com/bethanyzyreen/zythera.git" target="_blank" rel="noopener noreferrer"
-                  class="btn btn-project">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
-                <a href="zythera.html" class="btn btn-project">
-                  <i class="fas fa-eye"></i> View Project
-                </a>
-              </div>
-
+            <div class="project-body">
+              <h3>Zyreen Mobile Bookstore App</h3>
+              <p class="project-sub">Android app built with Kodular</p>
+              <p class="project-desc">A green-themed bookstore app with a product catalog, Philippine Peso pricing, and
+                an Add to Cart flow.</p>
+              <ul class="tag-list">
+                <li>Kodular</li>
+                <li>Android</li>
+                <li>Mobile App</li>
+              </ul>
+              <button class="btn btn-primary btn-sm project-open" type="button" data-open="zyreen-mobile"
+                aria-haspopup="dialog">View Project</button>
             </div>
           </article>
 
-          <!-- PROJECT 5: Measurement Conversion System -->
-          <article class="project-card" id="measurement-conversion">
-            <div class="project-image sunset-panel">
-              <i class="fas fa-ruler-combined panel-icon"></i>
+          <article class="project-card" data-project="measurement-conversion">
+            <div class="project-media">
+              <img src="assets/img/measurement-conversion.jpeg"
+                alt="Console menu listing the Measurement Conversion System's 10 conversion categories" width="1440"
+                height="900" loading="lazy">
             </div>
-            <div class="project-content">
-              <span class="project-badge">C++ · OOP</span>
+            <div class="project-body">
               <h3>Measurement Conversion System</h3>
-              <p>
-                A console-based C++ unit converter supporting 10 conversion categories — Length, Weight,
-                Temperature, Time, Volume, Pressure, Speed, Storage, Internet Speed, and Download Time.
-                Built with OOP principles, full input validation, and an intuitive menu-driven interface
-                that lets users convert, re-convert, or navigate freely.
-              </p>
-              <div class="project-tags">
-                <span class="tag">C++</span>
-                <span class="tag">OOP</span>
-                <span class="tag">Console App</span>
-              </div>
-              <a href="https://github.com/bethanyzyreen/Measurement-Conversion-System.git" target="_blank"
-                rel="noopener noreferrer" class="btn btn-project mt-3">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <p class="project-sub">Console-based unit converter</p>
+              <p class="project-desc">A C++ converter covering 10 categories, built with OOP principles, input
+                validation, and a menu-driven interface.</p>
+              <ul class="tag-list">
+                <li>C++</li>
+                <li>OOP</li>
+                <li>Console App</li>
+              </ul>
+              <button class="btn btn-primary btn-sm project-open" type="button" data-open="measurement-conversion"
+                aria-haspopup="dialog">View Project</button>
             </div>
           </article>
 
-          <!-- PROJECT 6: Zyreen Mobile App -->
-          <article class="project-card" id="zyreen-mobile">
-            <div class="project-image sunset-panel">
-              <i class="fas fa-mobile-alt panel-icon"></i>
+          <article class="project-card" data-project="sunset-pages">
+            <div class="project-media">
+              <img src="assets/img/sunsetpages.jpg"
+                alt="Sunset Pages home screen with sunset photo gallery and featured books" width="1440" height="900"
+                loading="lazy">
             </div>
-            <div class="project-content">
-              <span class="project-badge">Kodular · Android</span>
-              <h3>Zyreen — Mobile Bookstore App</h3>
-              <p>
-                A mobile bookstore app built with Kodular featuring a clean green-themed UI, a product catalog
-                with books like <em>The Book Thief</em> and <em>Gulliver's Travels</em>, pricing in Philippine
-                Peso, an Add to Cart flow, and About Us, Products, and Contact screens.
-              </p>
-              <div class="project-tags">
-                <span class="tag">Kodular</span>
-                <span class="tag">Android</span>
-                <span class="tag">Mobile App</span>
-                <span class="tag">Bookstore</span>
-              </div>
-              <a href="zyreen-mobile.html" class="btn btn-project mt-3">
-                <i class="fas fa-eye"></i> View Project
-              </a>
+            <div class="project-body">
+              <h3>Sunset Pages</h3>
+              <p class="project-sub">Online Bookstore</p>
+              <p class="project-desc">A sunset-themed bookstore with curated photo galleries, a 5-star rating system,
+                and
+                genre-based book discovery.</p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Image Gallery</li>
+              </ul>
+              <button class="btn btn-primary btn-sm project-open" type="button" data-open="sunset-pages"
+                aria-haspopup="dialog">View Project</button>
             </div>
           </article>
 
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- WEB DEVELOPMENT ACTIVITIES -->
+    <section class="section section-tint" id="activities" aria-labelledby="activities-title">
+      <div class="container">
+        <p class="eyebrow">Web development activities</p>
+        <h2 id="activities-title">Hands-on activities and exercises</h2>
+
+        <div class="activity-grid">
+
+          <article class="project-card">
+            <div class="project-media project-media--activity">
+              <i class="fas fa-table-cells-large" aria-hidden="true"></i>
+              <img src="assets/img/activity1.jpg" alt="Preview of the Bento Layout dashboard" width="1440" height="900"
+                loading="lazy" onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Activity 1 — Bento Layout</h3>
+              <p class="project-sub">Bootstrap 5 dashboard</p>
+              <p class="project-desc">A bento-style dashboard with a class schedule that highlights today's classes, an
+                interactive to-do list with finished tasks, a tasks-per-subject chart, and a rotating quote card.</p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap 5</li>
+                <li>JavaScript</li>
+              </ul>
+              <a class="btn btn-primary btn-sm project-open" href="WebDev-Activities/Activity1/bento.html"
+                target="_blank" rel="noopener noreferrer">View Activity <i class="fas fa-arrow-up-right-from-square"
+                  aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- Activity 2 -->
+          <article class="project-card is-placeholder">
+            <div class="project-media project-media--activity">
+              <i class="fas fa-laptop-code" aria-hidden="true"></i>
+              <img src="assets/img/activity2.jpg" alt="Preview of Activity 2" width="1440" height="900" loading="lazy"
+                onerror="this.remove()">
+            </div>
+            <div class="project-body">
+              <h3>Activity 2</h3>
+              <p class="project-sub">Coming soon</p>
+              <p class="project-desc">Details for this activity will be added soon.</p>
+              <ul class="tag-list" aria-hidden="true"></ul>
+              <span class="btn btn-primary btn-sm project-open is-disabled" aria-disabled="true">Coming soon</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="eyebrow">Experience &amp; education</p>
+        <h2 id="experience-title">My journey so far</h2>
+
+        <div class="journey-grid">
+          <ol class="timeline" aria-label="Experience">
+            <li>
+              <p class="timeline-date">2026</p>
+              <h3>Project Developer, Qydentra</h3>
+              <p>Co-developed a dental appointment and queue system with PHP, JavaScript, and MySQL as an IPT project.
+              </p>
+            </li>
+            <li>
+              <p class="timeline-date">2026</p>
+              <h3>Project Developer, Zythera</h3>
+              <p>Co-developed a furniture e-commerce platform with Snckish, covering the catalog, cart, checkout, and
+                admin dashboard.</p>
+            </li>
+            <li>
+              <p class="timeline-date">2025 – 2026</p>
+              <h3>Project Developer, Sunset Pages</h3>
+              <p>Designed and built a responsive online bookstore with image galleries, star ratings, and genre-based
+                discovery.</p>
+            </li>
+            <li>
+              <p class="timeline-date">2024 – 2026</p>
+              <h3>Collaborative Academic Projects</h3>
+              <p>Built Magma Madness, a 2D Pygame game, and co-created the C++ Measurement Conversion System with
+                classmates.</p>
+            </li>
+          </ol>
+
+          <div class="journey-side">
+            <article class="panel">
+              <h3 class="panel-title">Education</h3>
+              <ol class="timeline timeline--compact" aria-label="Education">
+                <li>
+                  <p class="timeline-date">2024 – Present</p>
+                  <h4>BS Information Technology</h4>
+                  <p>PUP – Sto. Tomas Branch</p>
+                </li>
+                <li>
+                  <p class="timeline-date">2022 – 2024</p>
+                  <h4>Senior High School – STEM</h4>
+                  <p>Tanauan City Integrated High School</p>
+                </li>
+                <li>
+                  <p class="timeline-date">2019 – 2022</p>
+                  <h4>Junior High School</h4>
+                  <p>Tinurik National High School</p>
+                </li>
+                <li>
+                  <p class="timeline-date">2013 – 2019</p>
+                  <h4>Elementary</h4>
+                  <p>Bagumbayan Elementary School</p>
+                </li>
+              </ol>
+            </article>
+
+            <article class="panel cert">
+              <img src="assets/img/introduction-to-iot.png"
+                alt="Cisco Networking Academy verified badge for Introduction to IoT" width="600" height="600"
+                loading="lazy">
+              <div>
+                <h3 class="cert-title">Introduction to IoT and Digital Transformation</h3>
+                <p class="cert-meta">Cisco Networking Academy · May 29, 2026</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-tint" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's work together</h2>
+          <p class="lead">Have a project, internship, or idea in mind? Send a message and I'll get back to you.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="icon-tile icon-tile--round"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+              <div><span class="contact-label">Email</span><a
+                  href="mailto:bethany.zyreenamosco4@email.com">bethany.zyreenamosco4@email.com</a></div>
+            </li>
+            <li>
+              <span class="icon-tile icon-tile--round"><i class="fas fa-phone" aria-hidden="true"></i></span>
+              <div><span class="contact-label">Phone</span><a href="tel:+639279823812">+63 927 982 3812</a></div>
+            </li>
+            <li>
+              <span class="icon-tile icon-tile--round"><i class="fas fa-location-dot" aria-hidden="true"></i></span>
+              <div><span class="contact-label">Location</span><span>Tanauan, Batangas</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xqeowqlp" method="POST" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="first_name">First name</label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name" required
+                aria-describedby="first_name-error">
+              <p class="field-error" id="first_name-error"></p>
+            </div>
+            <div class="field">
+              <label for="last_name">Last name</label>
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name" required
+                aria-describedby="last_name-error">
+              <p class="field-error" id="last_name-error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="field-error" id="email-error"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Send message <i class="fas fa-paper-plane"
+              aria-hidden="true"></i></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="footer-brand" href="#top">
+          <img src="assets/img/Group13.svg" alt="" width="44" height="44">
+          <span>
+            <strong>Bethany Zyreen</strong>
+            <small>Forensic Computer Analyst</small>
+          </span>
+        </a>
+        <ul class="social-list social-list--footer" aria-label="Social media">
+          <li><a class="social-btn" href="https://instagram.com/zyrnchl" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a class="social-btn" href="https://facebook.com/bethanyzyreen" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a class="social-btn" href="https://www.linkedin.com/in/bethanyzyreenamosco" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </li>
+          <li><a class="social-btn" href="https://github.com/bethanyzyreen" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer-bottom">© 2026 Bethany Zyreen · <a href="#top">Back to top <i class="fas fa-arrow-up"
+            aria-hidden="true"></i></a></p>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="project-modal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+      aria-describedby="modal-desc" tabindex="-1">
+      <button class="modal-close" type="button" aria-label="Close project details"><i class="fas fa-xmark"
+          aria-hidden="true"></i></button>
+      <div class="modal-media" id="modal-media">
+        <div class="modal-stage"><img id="modal-image" src="" alt=""></div>
+        <ul class="modal-thumbs" id="modal-thumbs" aria-label="Project screenshots"></ul>
+      </div>
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p class="modal-sub" id="modal-sub"></p>
+        <p id="modal-desc" class="modal-desc"></p>
+        <h3 class="modal-heading">Main features</h3>
+        <ul class="feature-list" id="modal-features"></ul>
+        <ul class="tag-list" id="modal-tags" aria-label="Technologies"></ul>
+        <a class="btn btn-dark" id="modal-github" href="#" target="_blank" rel="noopener noreferrer" hidden>
+          <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
   <script src="assets/js/script.js"></script>
 </body>
 
