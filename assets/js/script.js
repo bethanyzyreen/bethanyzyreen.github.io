@@ -91,6 +91,20 @@ const PROJECTS = {
     ],
     phone: true,
     github: null
+  },
+  'activity-1': {
+    title: 'Activity 1: Bento Layout',
+    subtitle: 'Bootstrap 5 dashboard',
+    description: 'A bento-style study dashboard built for a web development class. Cards for the schedule, tasks, chart, and quotes rearrange themselves from phone to desktop.',
+    features: [
+      'Class schedule that highlights today\'s classes',
+      'Interactive to-do list with finished tasks, saved in the browser',
+      'Tasks-per-subject bar chart',
+      'Rotating motivational quote card'
+    ],
+    tags: ['HTML', 'CSS', 'Bootstrap 5', 'JavaScript'],
+    images: [['assets/img/activity1.jpg', 'Bento Layout dashboard']],
+    github: 'https://github.com/bethanyzyreen/WebDev-Activities/tree/main/Activity1'
   }
 };
 
@@ -193,13 +207,8 @@ const PROJECTS = {
     }
     showImage(project, 0);
 
-    if (project.github) {
-      github.href = project.github;
-      github.hidden = false;
-    } else {
-      github.removeAttribute('href');
-      github.hidden = true;
-    }
+    github.hidden = !project.github;
+    if (project.github) github.href = project.github; else github.removeAttribute('href');
   }
 
   function open(id, trigger) {
