@@ -15,9 +15,9 @@ Live site: https://bethanyzyreen.github.io
 ## Sections in `portfolio.html`
 
 - **Projects** — Qydentra, Zythera, Zyreen Mobile Bookstore App, Measurement Conversion System, Sunset Pages. Each has a "View Project" button that opens a details modal.
-- **Web development activities** — "View Activity" opens the activity page directly in a new tab (no modal):
+- **Web development activities** — "View Activity" opens the activity page directly in a new tab:
   - Activity 1 — Bento Layout: `WebDev-Activities/Activity1/bento.html`
-  - Activity 2 — coming soon
+  - Activity 2 — JSON
 
 ## Project structure
 
