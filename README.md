@@ -1,6 +1,6 @@
 # Bethany Zyreen — Portfolio
 
-Personal portfolio website of **Bethany Zyreen**, an aspiring Forensic Computer Analyst.
+Personal portfolio website of **Bethany Zyreen**.
 
 Live site: https://bethanyzyreen.github.io
 
@@ -17,7 +17,7 @@ Live site: https://bethanyzyreen.github.io
 - **Projects** — Qydentra, Zythera, Zyreen Mobile Bookstore App, Measurement Conversion System, Sunset Pages. Each has a "View Project" button that opens a details modal.
 - **Web development activities** — "View Activity" opens the activity page directly in a new tab:
   - Activity 1 — Bento Layout: `WebDev-Activities/Activity1/bento.html`
-  - Activity 2 — JSON
+  - Activity 2 — Pastry Menu: `WebDev-Activities/Activity2/json.html`
 
 ## Project structure
 
@@ -26,6 +26,9 @@ Live site: https://bethanyzyreen.github.io
 ├── index.html
 ├── portfolio.html
 ├── resume.html
+├── WebDev-Activities/
+    └── Activity1/   bento.html + assets/img
+│   └── Activity2/   json.html + assets/img
 └── assets/
     ├── css/   style.css, pages.css, activities.css, resume.css
     ├── js/    script.js, legacy.js
@@ -38,7 +41,7 @@ HTML, CSS, JavaScript, [Font Awesome 6.5](https://fontawesome.com/) and Google F
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `json.html` in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
